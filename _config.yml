@@ -24,7 +24,7 @@ description              : "Enginnering Student & Developer."
 url                      : "https://BleuBulbLight.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/BleuBulbLight/BleuBulbLight.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "assets/images/blueballoon.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/blueballoon.png" # path of logo image to display in the masthead
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:parkgiraffe@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -122,7 +122,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/BleuBulbLight"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -275,16 +275,17 @@ compress_html:
     envs: development
 
 
-# Defaults
+# Defaults : 페이지의 머리말에 선언하지 않아도, 아래 내용들은 기본값으로 적용됨.
 defaults:
   # _posts
   - scope:
-      path: ""
-      type: posts
+      path: ""                    # 모든 경로의 페이지에 적용
+      type: posts                 # 포스트 타입의 페이지에 적용
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      layout: single              # single 레이아웃을 적용
+      author_profile: true        # 내 프로필을 사이드바에 표시함
+      read_time: false            # 한 포스트를 다 읽는데 n분이 걸림을 보여주는 완독 추측
+      comments: true              # 댓글 기능 활성화
+      share: true                 # 소셜 공유 기능 홝성화
+      related: true               # 관련 포스트 추천 활성화
+      toc : true                  # 현재 페이지의 목차 보기 활성화
