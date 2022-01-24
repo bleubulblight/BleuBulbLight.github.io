@@ -155,9 +155,9 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 200px !default; //default 200px
+$right-sidebar-width: 250px !default; //default 300px, 왼쪽 프로필 및 우측 toc 너비조절
+$right-sidebar-width-wide: 400px !default; //default 400px
 
 /*
    Other
