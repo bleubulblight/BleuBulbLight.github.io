@@ -19,34 +19,58 @@
                 <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">Blog ({{category[1].size}})</a></li>
+                    {% if category[0] == "PRML" %}
+                        <li><a href="/categories/blog" class=""> 패턴인식과 머신러닝 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "FAQ" %}
-                        <li><a href="/categories/FAQ" class="">FAQ ({{category[1].size}})</a></li>
+                    {% if category[0] == "MLDev" %}
+                        <li><a href="/categories/MLDev" class=""> MLDev ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">준비중</span>
+        <span class="nav__sub-title">Algorithm</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">준비중입니다1 (with C++) ({{category[1].size}})</a></li>
+                    {% if category[0] == "Opti" %}
+                        <li><a href="/categories/Opti" class=""> Optimization ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">준비중입니다2 ({{category[1].size}})</a></li>
+                    {% if category[0] == "ALDesign" %}
+                        <li><a href="/categories/ALDesign" class=""> Design Techniques ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
+
+        <span class="nav__sub-title">Mathematics</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Linear Algebra" %}
+                        <li><a href="/categories/Linear Algebra" class=""> Linear Algebra ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Statistics and Probability" %}
+                        <li><a href="/categories/Statistics and Probability" class=""> Statistics and Probability ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Calculus" %}
+                        <li><a href="/categories/Calculus" class=""> Calculus ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
       </li>
   </ul>
 </nav>

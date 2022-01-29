@@ -3,9 +3,9 @@ title:  "테스트글 "
 excerpt: " 해당 글은 테스트 글입니다. 다양한 종류의 카테고리와 태그로 구성되어 있습니다. "
 
 categories:
-  - Blog
+  - PRML
 tags:
-  - [Blog, jekyll]
+  - [PRML, jekyll]
 
 toc: true
 toc_sticky: true

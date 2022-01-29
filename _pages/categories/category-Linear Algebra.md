@@ -1,7 +1,7 @@
 ---
-title: "FAQ"
+title: "Linear Algebra"
 layout: archive
-permalink: categories/FAQ
+permalink: categories/Linear Algebra
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.FAQ %}
+{% assign posts = site.categories.Linear Algebra %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

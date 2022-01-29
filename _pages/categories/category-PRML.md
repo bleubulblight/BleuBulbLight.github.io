@@ -1,7 +1,7 @@
 ---
-title: "Blog"
+title: "PRML"
 layout: archive
-permalink: categories/blog
+permalink: categories/PRML
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Blog %}
+{% assign posts = site.categories.PRML %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
