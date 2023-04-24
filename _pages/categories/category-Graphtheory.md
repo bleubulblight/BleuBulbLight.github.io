@@ -1,7 +1,7 @@
 ---
-title: "ALDesign"
+title: "Graphtheory"
 layout: archive
-permalink: categories/ALDesign
+permalink: categories/Graphtheory
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.ALDesign %}
+{% assign posts = site.categories.Graphtheory %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
