@@ -13,21 +13,49 @@
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
 
+        <span class="nav__sub-title">TRANSPORTATION</span>
+        <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+        <ul>
+            <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
+            <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+            {% for category in site.categories %}
+                {% if category[0] == "TransKnowledge" %}
+                    <li><a href="/categories/TransKnowledge" class=""> Transportation Knowledge ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
+            <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+            {% for category in site.categories %}
+                {% if category[0] == "TransDesign" %}
+                    <li><a href="/categories/TransDesign" class=""> Transportation System Design ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
         <span class="nav__sub-title">ML</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "PRML" %}
-                        <li><a href="/categories/blog" class=""> 패턴인식과 머신러닝 ({{category[1].size}})</a></li>
+                    {% if category[0] == "SupLearning" %}
+                        <li><a href="/categories/SupLearning" class=""> Supervised Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "MLDev" %}
-                        <li><a href="/categories/MLDev" class=""> MLDev ({{category[1].size}})</a></li>
+                    {% if category[0] == "UnsupLearning" %}
+                        <li><a href="/categories/UnsupLearning" class=""> Unsupervised Learning ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "RL" %}
+                        <li><a href="/categories/RL" class=""> Reinforcement Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -42,8 +70,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "ALDesign" %}
-                        <li><a href="/categories/ALDesign" class=""> Design Techniques ({{category[1].size}})</a></li>
+                    {% if category[0] == "DataStructure" %}
+                        <li><a href="/categories/DataStructure" class=""> Data Structure ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -52,14 +80,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linear Algebra" %}
-                        <li><a href="/categories/Linear Algebra" class=""> Linear Algebra ({{category[1].size}})</a></li>
+                        <li><a href="/categories/LinearAlgebra" class=""> Linear Algebra ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Statistics and Probability" %}
-                        <li><a href="/categories/Statistics and Probability" class=""> Statistics and Probability ({{category[1].size}})</a></li>
+                        <li><a href="/categories/StatisticsandProbability" class=""> Statistics and Probability ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -67,6 +95,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Calculus" %}
                         <li><a href="/categories/Calculus" class=""> Calculus ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Graphtheory" %}
+                        <li><a href="/categories/Graphtheory" class=""> Graph Theory ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
