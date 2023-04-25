@@ -19,8 +19,8 @@
             <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
             <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
             {% for category in site.categories %}
-                {% if category[0] == "TransKnowledge" %}
-                    <li><a href="/categories/TransKnowledge" class=""> Transportation Knowledge ({{category[1].size}})</a></li>
+                {% if category[0] == "Transportation Knowledge" %}
+                    <li><a href="/categories/Transportation Knowledge" class=""> Transportation Knowledge ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -28,8 +28,38 @@
             <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
             <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
             {% for category in site.categories %}
-                {% if category[0] == "TransDesign" %}
-                    <li><a href="/categories/TransDesign" class=""> Transportation System Design ({{category[1].size}})</a></li>
+                {% if category[0] == "Transportation System Design" %}
+                    <li><a href="/categories/Transportation System Design" class=""> Transportation System Design ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <span class="nav__sub-title">Mathematics</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Linear Algebra" %}
+                    <li><a href="/categories/Linear Algebra" class=""> Linear Algebra ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Statistics and Probability" %}
+                    <li><a href="/categories/Statistics and Probability" class=""> Statistics and Probability ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Analysis" %}
+                    <li><a href="/categories/Analysis" class=""> Analysis ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Discrete Mathematcis" %}
+                    <li><a href="/categories/Discrete Mathematcis" class=""> Discrete Mathematcis ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -40,71 +70,48 @@
                 <!--Blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "SupLearning" %}
-                        <li><a href="/categories/SupLearning" class=""> Supervised Learning ({{category[1].size}})</a></li>
+                    {% if category[0] == "Supervised Learning" %}
+                        <li><a href="/categories/Supervised Learning" class=""> Supervised Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "UnsupLearning" %}
-                        <li><a href="/categories/UnsupLearning" class=""> Unsupervised Learning ({{category[1].size}})</a></li>
+                    {% if category[0] == "Unsupervised Learning" %}
+                        <li><a href="/categories/Unsupervised Learning" class=""> Unsupervised Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "RL" %}
-                        <li><a href="/categories/RL" class=""> Reinforcement Learning ({{category[1].size}})</a></li>
+                    {% if category[0] == "Reinforcement Learning" %}
+                        <li><a href="/categories/Reinforcement Learning" class=""> Reinforcement Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Algorithm</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Opti" %}
-                        <li><a href="/categories/Opti" class=""> Optimization ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "DataStructure" %}
-                        <li><a href="/categories/DataStructure" class=""> Data Structure ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <span class="nav__sub-title">Mathematics</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Linear Algebra" %}
-                        <li><a href="/categories/LinearAlgebra" class=""> Linear Algebra ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Statistics and Probability" %}
-                        <li><a href="/categories/StatisticsandProbability" class=""> Statistics and Probability ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Calculus" %}
-                        <li><a href="/categories/Calculus" class=""> Calculus ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Graphtheory" %}
-                        <li><a href="/categories/Graphtheory" class=""> Graph Theory ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <span class="nav__sub-title">Other Interest</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Opeartion Research" %}
+                    <li><a href="/categories/Opeartion Research" class=""> Opeartion Research ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Computer Science" %}
+                    <li><a href="/categories/Computer Science" class=""> Computer Science ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Economics" %}
+                    <li><a href="/categories/Economics" class=""> Economics ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
 
       </li>
   </ul>

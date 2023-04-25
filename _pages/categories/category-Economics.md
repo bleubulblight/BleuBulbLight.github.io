@@ -1,7 +1,7 @@
 ---
-title: "Unsupervised Learning"
+title: "Economics"
 layout: archive
-permalink: categories/Unsupervised Learning
+permalink: categories/Economics
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Unsupervised Learning %}
+{% assign posts = site.categories.Economics %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

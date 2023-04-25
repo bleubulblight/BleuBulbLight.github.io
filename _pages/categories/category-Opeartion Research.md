@@ -1,7 +1,7 @@
 ---
-title: "PRML"
+title: "Opeartion Research"
 layout: archive
-permalink: categories/PRML
+permalink: categories/Opeartion Research
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.PRML %}
+{% assign posts = site.categories.Opeartion Research %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

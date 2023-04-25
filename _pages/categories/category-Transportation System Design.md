@@ -1,7 +1,7 @@
 ---
-title: "TransKnowledge"
+title: "Transportation System Design"
 layout: archive
-permalink: categories/TransKnowledge
+permalink: categories/Transportation System Design
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.TransKnowledge %}
+{% assign posts = site.categories.Transportation System Design %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

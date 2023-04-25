@@ -1,7 +1,7 @@
 ---
-title: "RL"
+title: "Supervised Learning"
 layout: archive
-permalink: categories/RL
+permalink: categories/Supervised Learning
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.RL %}
+{% assign posts = site.categories.Supervised Learning %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
