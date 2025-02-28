@@ -113,6 +113,59 @@
             {% endfor %}
         </ul>
 
+        <span class="nav__sub-title">Transportation Engineer</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Transportation Engineering" %}
+                    <li><a href="/categories/Transportation Engineering" class=""> Transportation Engineering ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Transportation Data Analysis" %}
+                    <li><a href="/categories/Transportation Data Analysis" class=""> Transportation Data Analysis ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Optimization" %}
+                    <li><a href="/categories/Optimization" class=""> Optimization ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "AI & ITS" %}
+                    <li><a href="/categories/AI & ITS" class=""> AI & ITS ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <span class="nav__sub-title">Developer</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Back-end" %}
+                    <li><a href="/categories/Back-end" class=""> Back-end ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "DevOps" %}
+                    <li><a href="/categories/DevOps" class=""> DevOps ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "CS Fundamentals" %}
+                    <li><a href="/categories/CS Fundamentals" class=""> CS Fundamentals ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
       </li>
   </ul>
 </nav>
