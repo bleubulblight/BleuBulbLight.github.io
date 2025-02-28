@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Supervised Learning %}
+{% assign posts = site.categories['Supervised Learning'] %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
