@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Opeartion Research %}
+{% assign posts = site.categories['Opeartion Research'] %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

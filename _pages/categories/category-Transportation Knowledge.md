@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Transportation Knowledge %}
+{% assign posts = site.categories['Transportation Knowledge'] %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
